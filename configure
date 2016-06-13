@@ -1,1 +1,2 @@
-echo $*
+foo = $(echo $1 | sed "s,.*=,,")
+echo $foo
