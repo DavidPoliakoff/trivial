@@ -1,2 +1,2 @@
-foo = $(echo $1 | sed "s,.*=,,")
-echo $foo
+foo= echo $1 | sed "s,.*=,,"
+sed -i "s,INSTALL_DIR,$foo" Makefile
